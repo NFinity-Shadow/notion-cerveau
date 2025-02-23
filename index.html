@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouton personnalisé</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: transparent; /* Pour que le fond de Notion soit visible */
+    }
+    .custom-button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .custom-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <button class="custom-button" onclick="alert('Bouton cliqué !')">
+    Cliquez-moi
+  </button>
+</body>
+</html>
