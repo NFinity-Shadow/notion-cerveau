@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bouton personnalisé</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: transparent; /* Pour que le fond de Notion soit visible */
-    }
-    .custom-button {
-      padding: 10px 20px;
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .custom-button:hover {
-      background-color: #2980b9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton</title>
+    <style>
+        .button-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            width: 200px;
+            text-decoration: none;
+        }
+
+        .button-container:hover {
+            background-color: #eaeaea;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-color: #ddd;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon::after {
+            content: '✔';
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-  <button class="custom-button" onclick="alert('Bouton cliqué !')">
-    Cliquez-moi
-  </button>
+
+<a href="#" class="button-container">
+    TITRE
+    <div class="icon"></div>
+</a>
+
 </body>
 </html>
