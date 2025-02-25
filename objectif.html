@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton</title>
+    <style>
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 318px;
+            height: 148px;
+            background-color: #F8F8F8;
+            border-radius: 12px;
+            text-decoration: none;
+            padding: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .title-container {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .title {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: #333;
+            margin: 0;
+        }
+
+        .button-container::after {
+            content: "";
+            width: 10rem;
+            height: 10rem;
+            background-image: url('/assets/target-arrow-bullseye.svg'); /* Remplace par ton fichier */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            right: -15%;
+            transform: translateY(-50%);
+            opacity: 0.7;
+        }
+
+        /* Effet au survol */
+        .button-container:hover {
+            background-color: #EFEFEF;
+            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+        }           
+    </style>
+</head>
+<body>
+    <a href="https://www.notion.so/Second-Cerveau-1a37e49144c78002b6d6f832a48bd378?pvs=4#1a37e49144c78073aff4d24a848c091e" class="button-container">
+        <div class="title-container">
+            <p class="title">OBJECTIFS</p>
+        </div>
+    </a>
+</body>
+</html>
